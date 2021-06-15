@@ -16,11 +16,10 @@ The workspace enables build, test, and release across the following projects:
 - **pip-clients-routeanalysis-node** - Client to Route Analysis microservice in Node.js
 - **pip-services-transducerdata-node** - Transducer data microservice in Node.js
 - **pip-clients-transducerdata-node** - Client to Transducer data microservice in Node.js
+- **pip-services-cameras-node** - Cameras microservice in Node.js
+- **pip-clients-cameras-node** - Client to cameras microservice in Node.js
 
 ## Installation
-
-- Install **pip-tasks-ps**, **pip-tasks-common-ps** and **pip-tasks-node-ps** Powershell modules, 
-add them to **PSModulePath** and import into Powershell
 
 - Clone this workspace to local disk
 ```bash
@@ -29,40 +28,7 @@ add them to **PSModulePath** and import into Powershell
 
 - Got to the workspace folder and clone component repositories
 ```bash
-> piptask clone -workspace
-```
-
-## Usage
-
-- Setting default workspace
-```bash
-> pipuse <Path to this workspace>
-```
-
-- Start and stop infrastructure services
-```bash
-> piptask start -component pip-services-devenv
-> piptask stop -component pip-services-devenv
-```
-
-- Building all components
-```bash
-> piptask build -all
-```
-
-- Test all components
-``` bash
-> piptask test -all
-```
-
-- Check out changes from remote repository
-```bash
-> piptask pull -all
-```
-
-- Check in changes to remote repository
-```bash
-> piptask push -m <Changes comment> -all
+> ./checkout.sh
 ```
 
 ## Acknowledgements
